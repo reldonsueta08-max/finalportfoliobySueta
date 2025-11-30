@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+  <div class="header-container">
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="about.html" class="btn">About Me</a></li>
+        <li><a href="skills.html" class="btn">Skills</a></li>
+        <li><a href="hobbies.html" class="btn">Hobbies</a></li>
+        <li><a href="contact.html" class="btn">Contact</a></li>
+      </ul>
+    </nav>
+
+    <a class="logo premium-btn" href="index.html">Home</a>
+
+  </div>
+</header>
+
+
+
+  <!-- About Section -->
+  <section class="about">
+    <div class="container about-container">
+      <!-- Profile Image -->
+      <div class="about-image">
+        <img src="images/gwapo.jpg" alt=" Profile">
+      </div>
+
+      <!-- About Content -->
+      <div class="about-content">
+        <h1>About <span>Me</span></h1>
+        <p>Hello! I'm <strong>Reldon</strong>I’m 19 years old and I live in North Cotabato. My ethnicity is Manobo and Ilonggo. I am flexible and can learn new things quickly. I try to be a good person, but I make mistakes sometimes. I am single and I focus on loving myself first. I like to have friends around and I am grateful when they are with me, especially when I feel lonely. I became an orphan when I was 2 years old and was raised by my grandparents with help from my uncles and aunties. I am dedicated to finishing school and reaching my goals.</p>
+        <a href="contact.html" class="btn">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fade Out Transition Script -->
+  <script>
+    document.querySelectorAll('a').forEach(link => {
+      if (link.hostname === window.location.hostname) {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          const href = this.href;
+          document.body.style.opacity = 0;
+          setTimeout(() => { window.location.href = href; }, 300);
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>
